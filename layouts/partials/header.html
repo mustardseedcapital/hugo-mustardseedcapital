@@ -1,0 +1,21 @@
+    {{if ne .Site.BaseURL "http://127.0.0.1:4321/"}}
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    {{ end }}
+
+
+    <div id="page-container">
+      <header id="header">
+        <div class="container">
+
+        </div>
+      </header>
+      <!--/#header -->
+
+
+
+
+      {{ if .IsHome | or .IsSection }}<main id="content" role="main">{{ else }}<article id="content" role="main">{{ end }}
+
+        {{- partial "header-content.html" . -}}

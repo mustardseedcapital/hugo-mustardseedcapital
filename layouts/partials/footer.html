@@ -1,0 +1,37 @@
+      {{- partial "footer-content.html" . -}}
+
+    {{if .IsHome }}</main>{{ else }}</article>{{ end }}
+
+
+
+
+      <footer id="footer">
+
+      </footer>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="/js/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/js/functions.min.js"></script>
+    {{ if .IsHome | or .IsSection }}<script src="/js/posts-category.min.js"></script>{{ end }}
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+      });
+    </script>
+    <script src="/js/node_modules/react/umd/react.production.min.js"></script>
+    <script src="/js/node_modules/react-dom/umd/react-dom.production.min.js"></script>
+    <script type="text/javascript">
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script type="text/javascript">
+      hljs.initHighlightingOnLoad();
+    </script>
